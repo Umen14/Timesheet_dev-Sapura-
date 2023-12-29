@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "828541252164",
+    "firebase_url": "https://timesheet-umendran-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "timesheet-umendran",
+    "storage_bucket": "timesheet-umendran.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828541252164:android:da926a5a3b5d150bdb0211",
+        "android_client_info": {
+          "package_name": "com.example.timesheetumendransapura"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9juFTYKRToYoQRSSZioX8Gk_SSyfMeFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

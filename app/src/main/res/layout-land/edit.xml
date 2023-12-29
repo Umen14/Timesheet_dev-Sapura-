@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/estartDateEditText"
+        android:layout_width="206dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="396dp"
+        android:layout_marginBottom="52dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Start Date"
+        android:inputType="none"
+        app:layout_constraintBottom_toTopOf="@+id/esstatus"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/esstatus"
+        android:layout_width="211dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="396dp"
+        android:layout_marginBottom="28dp"
+        android:entries="@array/status_array"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="200dp"
+        android:ems="10"
+        android:hint="Enter the Task"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/eendDateEditText"
+        android:layout_width="206dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="52dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="End Date"
+        android:inputType="none"
+        app:layout_constraintBottom_toTopOf="@+id/esassignto"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/eassignto"
+        android:layout_width="95dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="36dp"
+        android:text="Assign To :"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/esassignto"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/estatus"
+        android:layout_width="95dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="40dp"
+        android:text="Status :"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/esstatus"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/edateto"
+        android:layout_width="95dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="344dp"
+        android:layout_marginBottom="72dp"
+        android:text="Date To :"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/eassignto"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/edatefrom"
+        android:layout_width="114dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="72dp"
+        android:text="Date From:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/estatus"
+        app:layout_constraintEnd_toStartOf="@+id/estartDateEditText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/eproject"
+        android:layout_width="95dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:text="Project :"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/edatefrom"
+        app:layout_constraintEnd_toStartOf="@+id/eeditTextText2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/etask"
+        android:layout_width="95dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="216dp"
+        android:text="Task :"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eeditTextText2" />
+
+    <EditText
+        android:id="@+id/eeditTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="388dp"
+        android:ems="10"
+        android:hint="Enter the Project Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/esassignto"
+        android:layout_width="211dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Update Timesheet Entries"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

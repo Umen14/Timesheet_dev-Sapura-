@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TimeSheet Umendran Sapura</string>
+    <string-array name="status_array">
+        <item>Open</item>
+        <item>Closed</item>
+        <item>In-Progress</item>
+        <!-- Add more items as needed -->
+    </string-array>
+</resources>

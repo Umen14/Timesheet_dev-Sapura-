@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/startDateEditText"
+        android:layout_width="206dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Start Date"
+        android:inputType="none"
+        app:layout_constraintBottom_toTopOf="@+id/sstatus"
+        tools:layout_editor_absoluteX="139dp" />
+
+    <Spinner
+        android:id="@+id/sstatus"
+        android:layout_width="211dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        tools:layout_editor_absoluteX="134dp" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="388dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Enter the Task"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/startDateEditText"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/endDateEditText"
+        android:layout_width="206dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="End Date"
+        android:inputType="none"
+        app:layout_constraintBottom_toTopOf="@+id/sstatus"
+        tools:layout_editor_absoluteX="463dp" />
+
+    <TextView
+        android:id="@+id/assignto"
+        android:layout_width="95dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="360dp"
+        android:layout_marginBottom="28dp"
+        android:text="Assign To :"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/closeButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="95dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="36dp"
+        android:text="Status :"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dateto"
+        android:layout_width="95dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="368dp"
+        android:layout_marginBottom="28dp"
+        android:text="Date To :"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/status"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/datefrom"
+        android:layout_width="114dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:text="Date From:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <TextView
+        android:id="@+id/project"
+        android:layout_width="95dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:text="Project :"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/task"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/task"
+        android:layout_width="95dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="40dp"
+        android:text="Task :"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/datefrom"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="396dp"
+        android:ems="10"
+        android:hint="Enter the Project Name"
+        android:inputType="text"
+
+        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774" />
+
+    <Spinner
+        android:id="@+id/sassignto"
+        android:layout_width="222dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/closeButton"
+        tools:layout_editor_absoluteX="471dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="126dp" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="474dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Timesheet Entries"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
